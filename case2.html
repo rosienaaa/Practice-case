@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=devic-width, initial-scale=1"/>
+		<style type="text/css">
+			body{
+				perspective: 1000px;
+			}
+			#section{
+				position: relative;
+				width: 202px;
+				height: 376px;
+				margin: 188px auto;
+				background-image: url(img/v2-cac4cec7a3c9e993c6b4ee5d341fb7f5.jpg);
+				transform-style: preserve-3d;
+				/* animation:rotate 10s linear infinite; */
+			}
+			#section:hover{animation:rotate 10s linear infinite;}
+			@keyframes rotate{
+				0%{
+					transform: rotateY(0);
+				}
+				100%{
+					transform: rotateY(360deg);
+				}
+			}
+			#section div{
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-image:url(img/v2-cac4cec7a3c9e993c6b4ee5d341fb7f5.jpg);
+			}
+			#section div:nth-child(1){
+				transform: rotateY(60deg);
+				transform:translateZ(376px);
+			}
+			#section div:nth-child(2){
+				transform:rotateY(60deg) translateZ(376px);
+			}
+			#section div:nth-child(3){
+				transform:rotateY(120deg) translateZ(376px);
+			}
+			#section div:nth-child(4){
+				transform:rotateY(180deg) translateZ(376px);
+			}
+			#section div:nth-child(5){
+				transform:rotateY(240deg) translateZ(376px);
+			}
+			#section div:nth-child(6){
+				transform:rotateY(300deg) translateZ(376px);
+			}
+		</style>
+	</head>
+	<body>
+		<div id="section">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</body>
+</html>
